@@ -2,11 +2,32 @@
     "name": "use-smooth-scroll-to",
     "version": "1.0.0",
     "description": "",
-    "main": "src/index.ts",
+    "type": "module",
+    "main": "dist/index.esm.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "NODE_ENV=production rollup --config"
     },
     "keywords": [],
-    "author": "",
-    "license": "MIT"
+    "author": {
+        "name": "Marshall K",
+        "email": "marshall@kakao.com",
+        "url": "https://marshallku.com"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-typescript": "^11.1.2",
+        "@types/react": "^18.2.15",
+        "react": "^18.2.0",
+        "rollup": "^3.26.2",
+        "rollup-plugin-dts": "^5.3.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "tslib": "^2.6.0",
+        "typescript": "^5.1.6"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0"
+    }
 }
