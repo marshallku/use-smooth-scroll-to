@@ -1,7 +1,7 @@
 {
     "name": "use-smooth-scroll-to",
-    "version": "1.0.0",
-    "description": "",
+    "version": "0.1.0",
+    "description": "React hook for smooth scrolling",
     "type": "module",
     "main": "dist/index.esm.js",
     "module": "dist/index.esm.js",
