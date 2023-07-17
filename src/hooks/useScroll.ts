@@ -38,7 +38,7 @@ export default function useScroll({ useNativeScroll = false, easing = (x) => x }
             const startTime = performance.now();
             animation();
         },
-        [useNativeScroll],
+        [useNativeScroll, easing],
     );
 
     return {
